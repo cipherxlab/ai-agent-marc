@@ -1,0 +1,69 @@
+{
+  "pilgrimages": [
+    {
+      "id": 1,
+      "name": "Camino de Santiago",
+      "country": "Spain",
+      "distance": "800 km",
+      "duration": "30-35 days",
+      "difficulty": "Moderate",
+      "description": "The ancient pilgrimage route to the shrine of Saint James in Santiago de Compostela, walked by millions seeking spiritual renewal.",
+      "coordinates": [42.8805, -8.5456],
+      "highlights": ["Cathedral of Santiago", "Cruz de Ferro", "Astorga Cathedral"],
+      "spiritualFocus": "Penance, reflection, and spiritual transformation through walking meditation",
+      "lilasBloom": "Wild lavender fields bloom along the path in late spring, creating purple carpets of divine beauty"
+    },
+    {
+      "id": 2,
+      "name": "Via Francigena",
+      "country": "Italy/France/Switzerland/England",
+      "distance": "1,900 km", 
+      "duration": "70-90 days",
+      "difficulty": "Challenging",
+      "description": "The ancient pilgrimage route from Canterbury to Rome, following the footsteps of Archbishop Sigeric in 990 AD.",
+      "coordinates": [41.9028, 12.4964],
+      "highlights": ["Canterbury Cathedral", "Great St. Bernard Pass", "St. Peter's Basilica"],
+      "spiritualFocus": "Following apostolic tradition and connecting with early Christian heritage",
+      "lilasBloom": "Alpine violets and mountain lilacs create mystical purple pathways through the Swiss Alps"
+    },
+    {
+      "id": 3,
+      "name": "Fatima Pilgrimage",
+      "country": "Portugal",
+      "distance": "Various routes",
+      "duration": "3-7 days",
+      "difficulty": "Easy to Moderate", 
+      "description": "Pilgrimage to the Sanctuary of Our Lady of Fatima, site of the 1917 Marian apparitions to three shepherd children.",
+      "coordinates": [39.6319, -8.6719],
+      "highlights": ["Basilica of Our Lady of the Rosary", "Chapel of Apparitions", "Valinhos"],
+      "spiritualFocus": "Marian devotion, prayer of the rosary, and consecration to the Immaculate Heart",
+      "lilasBloom": "Portuguese lavender surrounds the sanctuary, filling the air with heavenly fragrance during prayer"
+    },
+    {
+      "id": 4,
+      "name": "Lourdes Pilgrimage",
+      "country": "France",
+      "distance": "Local walking routes",
+      "duration": "3-5 days",
+      "difficulty": "Easy",
+      "description": "Pilgrimage to the Grotto of Massabielle where Our Lady appeared to Saint Bernadette, seeking healing and grace.",
+      "coordinates": [43.0955, -0.0433],
+      "highlights": ["Grotto of Apparitions", "Basilica of the Immaculate Conception", "Healing Baths"],
+      "spiritualFocus": "Healing, both physical and spiritual, through the intercession of Our Lady",
+      "lilasBloom": "Wild irises bloom near the grotto in spring, their purple petals reflecting divine mercy"
+    },
+    {
+      "id": 5,
+      "name": "Mount Kailash Kora",
+      "country": "Tibet",
+      "distance": "52 km",
+      "duration": "3 days",
+      "difficulty": "Very Challenging",
+      "description": "Sacred circumambulation of Mount Kailash, considered holy by multiple faiths including Christianity through ancient traditions.",
+      "coordinates": [31.0688, 81.3119],
+      "highlights": ["Dolma La Pass", "Lake Manasarovar", "Dirapuk Monastery"],
+      "spiritualFocus": "Purification, meditation, and connection with the divine through extreme devotion",
+      "lilasBloom": "Rare Himalayan blue poppies create ethereal purple-blue meadows at high altitudes"
+    }
+  ]
+}

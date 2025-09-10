@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Google Fonts - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --foreground-rgb: 30, 58, 138;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  
+  /* Spiritual Color Palette */
+  --pure-white: #FFFFFF;
+  --deep-violet: #4b0082;
+  --soft-lilac: #e6e6fa;
+  --spiritual-blue: #1e3a8a;
+  --celestial-blue: #b3cde0;
+  --soft-gold: #f5e050;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 218 55% 40%;
+    --card: 0 0% 100%;
+    --card-foreground: 218 55% 40%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 55% 40%;
+    --primary: 263 100% 25%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 263 100% 95%;
+    --secondary-foreground: 263 100% 25%;
+    --muted: 263 100% 95%;
+    --muted-foreground: 218 55% 40%;
+    --accent: 263 100% 95%;
+    --accent-foreground: 263 100% 25%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 263 100% 90%;
+    --input: 263 100% 95%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    font-family: 'Inter', sans-serif;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-color: var(--pure-white);
+    color: var(--spiritual-blue);
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Spiritual Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deep-violet);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--deep-violet);
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--deep-violet);
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--deep-violet);
+}
+
+p {
+  color: var(--spiritual-blue);
+  font-size: 1.2em;
+  line-height: 1.7;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* Form Elements Styling */
+select, input, textarea {
+  background-color: var(--pure-white);
+  border: 2px solid var(--deep-violet);
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: var(--spiritual-blue);
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+select:focus, input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--spiritual-blue);
+  box-shadow: 0 0 0 3px rgba(75, 0, 130, 0.1);
+}
+
+select:hover, input:hover, textarea:hover {
+  border-color: var(--spiritual-blue);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, var(--deep-violet), var(--spiritual-blue));
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(75, 0, 130, 0.3);
+}
+
+/* Custom Seraphina Spiritual Color Palette */
+@layer utilities {
+  .text-deep-violet {
+    color: var(--deep-violet);
+  }
+  .bg-deep-violet {
+    background-color: var(--deep-violet);
+  }
+  .border-deep-violet {
+    border-color: var(--deep-violet);
+  }
+  
+  .text-soft-lilac {
+    color: var(--soft-lilac);
+  }
+  .bg-soft-lilac {
+    background-color: var(--soft-lilac);
+  }
+  .border-soft-lilac {
+    border-color: var(--soft-lilac);
+  }
+  
+  .text-spiritual-blue {
+    color: var(--spiritual-blue);
+  }
+  .bg-spiritual-blue {
+    background-color: var(--spiritual-blue);
+  }
+  .border-spiritual-blue {
+    border-color: var(--spiritual-blue);
+  }
+  
+  .text-celestial-blue {
+    color: var(--celestial-blue);
+  }
+  .bg-celestial-blue {
+    background-color: var(--celestial-blue);
+  }
+  .border-celestial-blue {
+    border-color: var(--celestial-blue);
+  }
+  
+  .text-pure-white {
+    color: var(--pure-white);
+  }
+  .bg-pure-white {
+    background-color: var(--pure-white);
+  }
+  .border-pure-white {
+    border-color: var(--pure-white);
+  }
+}
+
+/* Spiritual Cards */
+.spiritual-card {
+  background: var(--pure-white);
+  border: 1px solid var(--soft-lilac);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(75, 0, 130, 0.1);
+  transition: all 0.3s ease;
+}
+
+.spiritual-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(75, 0, 130, 0.15);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pure-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--deep-violet), var(--soft-lilac));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--spiritual-blue), var(--celestial-blue));
+}
+
+/* Text selection */
+::selection {
+  background-color: var(--soft-lilac);
+  color: var(--deep-violet);
+}
+
+::-moz-selection {
+  background-color: var(--soft-lilac);
+  color: var(--deep-violet);
+}
+
+/* Focus styles */
+.focus-visible:focus {
+  outline: 2px solid var(--deep-violet);
+  outline-offset: 2px;
+}
+
+/* Line clamp utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Backdrop blur fallback */
+@supports not (backdrop-filter: blur(12px)) {
+  .backdrop-blur-sm {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .text-celestial-blue {
+    color: #000000;
+  }
+  .text-spiritual-blue {
+    color: #000000;
+  }
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  p {
+    font-size: 1.1em;
+  }
+  
+  .spiritual-card {
+    padding: 1rem;
+  }
+}
+
+/* Loading states */
+.loading-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(75, 0, 130, 0.1), transparent);
+  background-size: 200% 100%;
+}
+
+/* Accessibility improvements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--deep-violet);
+  color: var(--pure-white);
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}

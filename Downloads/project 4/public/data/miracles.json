@@ -1,0 +1,59 @@
+{
+  "miracles": [
+    {
+      "id": 1,
+      "title": "The Eucharistic Miracle of Lanciano",
+      "location": "Lanciano, Italy",
+      "year": "700 AD",
+      "description": "During Mass, the consecrated bread and wine transformed into actual flesh and blood, which remain incorrupt to this day.",
+      "category": "Eucharistic",
+      "coordinates": [42.2297, 14.3889],
+      "verified": true,
+      "tags": ["eucharist", "flesh", "blood", "incorrupt"]
+    },
+    {
+      "id": 2,
+      "title": "Our Lady of Guadalupe",
+      "location": "Mexico City, Mexico", 
+      "year": "1531",
+      "description": "The Virgin Mary appeared to Juan Diego, leaving her miraculous image on his tilma, which remains perfectly preserved.",
+      "category": "Apparition",
+      "coordinates": [19.4326, -99.1332],
+      "verified": true,
+      "tags": ["mary", "apparition", "tilma", "guadalupe"]
+    },
+    {
+      "id": 3,
+      "title": "The Miracle of the Sun",
+      "location": "Fatima, Portugal",
+      "year": "1917", 
+      "description": "70,000 witnesses saw the sun dance and spin in the sky during the final apparition of Our Lady of Fatima.",
+      "category": "Apparition",
+      "coordinates": [39.6319, -8.6719],
+      "verified": true,
+      "tags": ["fatima", "sun", "dance", "mary", "apparition"]
+    },
+    {
+      "id": 4,
+      "title": "Saint Bernadette's Incorrupt Body",
+      "location": "Nevers, France",
+      "year": "1879",
+      "description": "The body of Saint Bernadette remains perfectly preserved 140+ years after her death, showing no signs of decay.",
+      "category": "Incorruption",
+      "coordinates": [47.0029, 3.1569],
+      "verified": true,
+      "tags": ["bernadette", "incorrupt", "lourdes", "preservation"]
+    },
+    {
+      "id": 5,
+      "title": "The Healing Waters of Lourdes",
+      "location": "Lourdes, France", 
+      "year": "1858",
+      "description": "Countless miraculous healings have occurred at the spring revealed by Our Lady to Saint Bernadette.",
+      "category": "Healing",
+      "coordinates": [43.0955, -0.0433],
+      "verified": true,
+      "tags": ["lourdes", "healing", "water", "bernadette", "mary"]
+    }
+  ]
+}
