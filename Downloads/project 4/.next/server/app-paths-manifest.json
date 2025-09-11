@@ -1,0 +1,8 @@
+{
+  "/not-found": "app/not-found.js",
+  "/page": "app/page.js",
+  "/community/page": "app/community/page.js",
+  "/about/page": "app/about/page.js",
+  "/pilgrimages/page": "app/pilgrimages/page.js",
+  "/miracles/page": "app/miracles/page.js"
+}
