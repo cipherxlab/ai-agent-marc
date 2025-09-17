@@ -50,3 +50,13 @@ if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
+
+from veille_marche import get_veille_data
+
+@app.get("/veille-marche")
+async def get_veille_marche():
+    try:
+        data = get_veille_data()
+        return {"success": True, "data": data}
+    except Exception as e:
+        return {"success": False, "error": str(e)}
