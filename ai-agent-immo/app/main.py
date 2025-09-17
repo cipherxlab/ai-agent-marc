@@ -6,7 +6,7 @@ import requests
 import json
 import os
 from datetime import datetime
-from app.veille_marche import get_veille_data
+from .veille_marche import get_veille_data
 app = FastAPI(title="AI Agent Immobilier", version="1.0.0")
 app.add_middleware(
 CORSMiddleware,
