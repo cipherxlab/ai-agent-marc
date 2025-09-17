@@ -47,12 +47,13 @@ async def chat_immobilier(request: ConversationRequest):
     )
 
 if __name__ == "__main__":
-    import uvicorn
-    port = int(os.environ.get("PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
-
 from app.veille_marche import get_veille_data
 
 @app.get("/veille-marche")
 async def veille_marche():
     return get_veille_data()
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
